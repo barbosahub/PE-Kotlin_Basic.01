@@ -21,14 +21,19 @@ fun main() {
     contaJulia.deposito(2700.0)
 
     /* ------------------------------   Realizando Deposito */
-    //    contaRui.deposito(750.00)
-    //    println(contaRui.saldo)
+        println("Saldo atualizado: ${contaRui.saldo}")
+
+        println("Realizando deposito...")
+        contaRui.deposito(750.00)
+        println("Saldo atualizado: ${contaRui.saldo}")
 
     /* ------------------------------   Realizando Saque */
-    //    contaJulia.saque(2800.0)
+        println("------------------------------------------")
+        contaJulia.saque(2800.0)
 
     /* ------------------------------   Realizando Transferencia */
-    //contaRui.transferencia(1500.0, contaJulia)
+    println("------------------------------------------")
+    contaRui.transferencia(1500.0, contaJulia)
 }
 
 class Conta(var titular: String,
